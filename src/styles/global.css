@@ -1,5 +1,154 @@
 @import "tailwindcss";
 
-body {
-  font-family: 'IBM Plex Mono', monospace;
+:root {
+  --bg-color: #121212;
+  --bg-color-2: #303030;
+  --bg-color-3: #ECE9E1;
+  --text: #F2EFEA;
+  --accent: #FAE09D;
+  --accent-2: #A20021;
+  --accent-3: #7b0019;
+  --accent-4: #f9a857;
 }
+
+@font-face {
+  font-family: 'Redaction50';
+  src: url(../assets/fonts/redaction-50-latin-400-italic.woff2) format('woff2');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Redaction50';
+  src: url(../assets/fonts/redaction-50-latin-400-normal.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction50';
+  src: url(../assets/fonts/redaction-50-latin-700-italic.woff2) format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Redaction50';
+  src: url(../assets/fonts/redaction-50-latin-700-normal.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AlteH Grotesk";
+  src: url(../assets/fonts/AlteHaasGroteskBold.woff2) format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AlteH Grotesk";
+  src: url(../assets/fonts/AlteHaasGroteskRegular.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "New Spirit";
+  src: url(../assets/fonts/newspiritreg.woff2) format('woff2');
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "New Spirit";
+  src: url(../assets/fonts/newspiritlight.woff2) format('woff2');
+  font-weight: bolder;
+}
+
+@font-face{
+  font-family: "New Spirit";
+  src: url(../assets/fonts/newspiritbold.woff2) format('woff2');
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: "New Spirit";
+  src: url(../assets/fonts/newspiritbolder.woff2) format('woff2');
+  font-weight: lighter;
+}
+
+body {
+  background-color: var(--accent-2);
+  color: var(--accent-2);
+  font-family: 'AlteH Grotesk';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent);
+  font-family: 'AlteH Grotesk';
+  font-weight: bold;
+}
+
+#hero h1, #hero h2, #hero h3, #hero h4, #hero h5, #hero h6 {
+  color: var(--accent-2)
+}
+
+#hero p {
+  color: var(--bg-color)
+}
+
+#hero {
+  background-color: var(--bg-color-3);
+}
+
+#hero-span {
+  font-family: 'Redaction50', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  border-radius: 14px;
+  padding: .15em .4em;
+  display: inline-block;
+}
+
+#footer {
+  position: relative;
+  inset: 0;
+  z-index: 1
+}
+
+p, ul {
+  color: var(--accent);
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header a {
+  color: var(--bg-color);
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#header a:hover {
+  color: var(--bg-color-2);
+}
+
+#footer a {
+  color: var(--accent);
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer a:hover {
+  color: var(--accent-4);
+}
+
+.sections {
+  position: relative;
+  z-index: 10;
+  background-color: var(--accent-2);
+}
+
+.cardBg {
+  background-color: var(--accent-3);
+}
+
